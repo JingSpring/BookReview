@@ -13,6 +13,8 @@
 		3E7B5E211CD4BE2000FFBF8A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B5E201CD4BE2000FFBF8A /* MessageViewController.swift */; };
 		3E7B5E281CD4BE2000FFBF8A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B5E271CD4BE2000FFBF8A /* SearchViewController.swift */; };
 		3E7B5E2E1CD4BE2000FFBF8A /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B5E2D1CD4BE2000FFBF8A /* MeViewController.swift */; };
+		3EBACC9D1CD477CD00B8FA0B /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBACC9C1CD477CD00B8FA0B /* FocusViewController.swift */; };
+		3EBACC9F1CD4782600B8FA0B /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBACC9E1CD4782600B8FA0B /* ChoiceViewController.swift */; };
 		3EC1A47B1CCF9FC7008143E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1A47A1CCF9FC7008143E0 /* AppDelegate.swift */; };
 		3EC1A4821CCF9FC7008143E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1A4811CCF9FC7008143E0 /* Assets.xcassets */; };
 		3EC1A4851CCF9FC7008143E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1A4831CCF9FC7008143E0 /* LaunchScreen.storyboard */; };
@@ -48,6 +50,8 @@
 		3E7B5E201CD4BE2000FFBF8A /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		3E7B5E271CD4BE2000FFBF8A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3E7B5E2D1CD4BE2000FFBF8A /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		3EBACC9C1CD477CD00B8FA0B /* FocusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
+		3EBACC9E1CD4782600B8FA0B /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
 		3EC1A4771CCF9FC7008143E0 /* BookReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC1A47A1CCF9FC7008143E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EC1A4811CCF9FC7008143E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				3E7B5E181CD4BE2000FFBF8A /* HomeViewController.swift */,
+				3EBACC9C1CD477CD00B8FA0B /* FocusViewController.swift */,
+				3EBACC9E1CD4782600B8FA0B /* ChoiceViewController.swift */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -476,9 +482,11 @@
 				3E7B5E2E1CD4BE2000FFBF8A /* MeViewController.swift in Sources */,
 				3E7B5E281CD4BE2000FFBF8A /* SearchViewController.swift in Sources */,
 				3E7B5E1B1CD4BE2000FFBF8A /* config.swift in Sources */,
+				3EBACC9D1CD477CD00B8FA0B /* FocusViewController.swift in Sources */,
 				3EC1A47B1CCF9FC7008143E0 /* AppDelegate.swift in Sources */,
 				3E7B5E211CD4BE2000FFBF8A /* MessageViewController.swift in Sources */,
 				3E7B5E191CD4BE2000FFBF8A /* HomeViewController.swift in Sources */,
+				3EBACC9F1CD4782600B8FA0B /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

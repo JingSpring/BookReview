@@ -18,16 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         /**
-        底部工具栏
+        底部标签控制栏
         */
         self.window = UIWindow(frame: CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT))
         
         let tabbarController = UITabBarController()
         
-        let homeController = HomeViewController()
-        let messageController = MessageViewController()
-        let searchController = SearchViewController()
-        let meController = MeViewController()
+        let homeController = UINavigationController(rootViewController: HomeViewController())
+        let messageController = UINavigationController(rootViewController: MessageViewController())
+        let searchController = UINavigationController(rootViewController: SearchViewController())
+        let meController = UINavigationController(rootViewController:MeViewController())
         
         tabbarController.viewControllers = [homeController,messageController,searchController,meController]
         
