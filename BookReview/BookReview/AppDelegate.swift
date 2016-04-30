@@ -15,7 +15,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        /**
+        底部工具栏
+        */
+        self.window = UIWindow(frame: CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT))
+        
+        let tabbarController = UITabBarController()
+        
+        let homeController = HomeViewController()
+        let messageController = MessageViewController()
+        let searchController = SearchViewController()
+        let meController = MeViewController()
+        
+        tabbarController.viewControllers = [homeController,messageController,searchController,meController]
+        
+        let tabbarItem1 = UITabBarItem(title: "首页", image: UIImage(named: "tabbar_home"), tag: 1)
+        let tabbarItem2 = UITabBarItem(title: "信息", image: UIImage(named: "tabbar_message_center"), tag: 2)
+        let tabbarItem3 = UITabBarItem(title: "发现", image: UIImage(named: "tabbar_discover"), tag: 3)
+        let tabbarItem4 = UITabBarItem(title: "我", image: UIImage(named: "tabbar_profile"), tag: 4)
+        
+        homeController.tabBarItem = tabbarItem1
+        messageController.tabBarItem = tabbarItem2
+        searchController.tabBarItem = tabbarItem3
+        meController.tabBarItem = tabbarItem4
+        
+        homeController.tabBarController?.tabBar.tintColor = UIColor.greenColor()
+        
+        self.window?.rootViewController = tabbarController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
