@@ -24,6 +24,7 @@
 		3EEEB0AB1CDDB1E800FCBF8A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEB0AA1CDDB1E800FCBF8A /* bg.png */; };
 		3EEEB0AD1CDDB56A00FCBF8A /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEB0AC1CDDB56A00FCBF8A /* Avatar.png */; };
 		3EEEB0AF1CDDBFD300FCBF8A /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEB0AE1CDDBFD300FCBF8A /* test.storyboard */; };
+		3EEEB0B11CDDCC3600FCBF8A /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEB0B01CDDCC3600FCBF8A /* LineView.swift */; };
 		45E47FDD7ED79537D4E8D588 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5466874FF71D05F4696106 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		3EEEB0AA1CDDB1E800FCBF8A /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		3EEEB0AC1CDDB56A00FCBF8A /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
 		3EEEB0AE1CDDBFD300FCBF8A /* test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
+		3EEEB0B01CDDCC3600FCBF8A /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		8BA36B90BE4C815E52C2A0B1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */,
+				3EEEB0B01CDDCC3600FCBF8A /* LineView.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				3EC1A47B1CCF9FC7008143E0 /* AppDelegate.swift in Sources */,
 				3E7B5E211CD4BE2000FFBF8A /* MessageViewController.swift in Sources */,
 				3E7B5E191CD4BE2000FFBF8A /* HomeViewController.swift in Sources */,
+				3EEEB0B11CDDCC3600FCBF8A /* LineView.swift in Sources */,
 				3EBACC9F1CD4782600B8FA0B /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
