@@ -20,6 +20,7 @@
 		3EC1A4851CCF9FC7008143E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1A4831CCF9FC7008143E0 /* LaunchScreen.storyboard */; };
 		3EC1A4901CCF9FC7008143E0 /* BookReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1A48F1CCF9FC7008143E0 /* BookReviewTests.swift */; };
 		3EC1A49B1CCF9FC7008143E0 /* BookReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1A49A1CCF9FC7008143E0 /* BookReviewUITests.swift */; };
+		3EEEB0A81CDD9FFE00FCBF8A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */; };
 		45E47FDD7ED79537D4E8D588 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5466874FF71D05F4696106 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		3EC1A4961CCF9FC7008143E0 /* BookReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC1A49A1CCF9FC7008143E0 /* BookReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITests.swift; sourceTree = "<group>"; };
 		3EC1A49C1CCF9FC7008143E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		8BA36B90BE4C815E52C2A0B1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 		3E7B5E161CD4BE1800FFBF8A /* V */ = {
 			isa = PBXGroup;
 			children = (
+				3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E7B5E2E1CD4BE2000FFBF8A /* MeViewController.swift in Sources */,
+				3EEEB0A81CDD9FFE00FCBF8A /* HeaderView.swift in Sources */,
 				3E7B5E281CD4BE2000FFBF8A /* SearchViewController.swift in Sources */,
 				3E7B5E1B1CD4BE2000FFBF8A /* config.swift in Sources */,
 				3EBACC9D1CD477CD00B8FA0B /* FocusViewController.swift in Sources */,
