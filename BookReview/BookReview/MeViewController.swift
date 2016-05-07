@@ -11,6 +11,8 @@ import UIKit
 class MeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     var tableView:UITableView!
+    
+    var headerView:HeaderView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,11 @@ class MeViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
         self.tableView.dataSource = self
         self.tableView.tableHeaderView = UIView()
         self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        
+        self.headerView = HeaderView(frame: CGRectMake(0,0,SCREEN_WIDTH,200))
+        
+        tableView.tableHeaderView = headerView
+        
     }
     
     /**

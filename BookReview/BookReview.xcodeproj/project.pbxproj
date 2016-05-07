@@ -21,6 +21,9 @@
 		3EC1A4901CCF9FC7008143E0 /* BookReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1A48F1CCF9FC7008143E0 /* BookReviewTests.swift */; };
 		3EC1A49B1CCF9FC7008143E0 /* BookReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1A49A1CCF9FC7008143E0 /* BookReviewUITests.swift */; };
 		3EEEB0A81CDD9FFE00FCBF8A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */; };
+		3EEEB0AB1CDDB1E800FCBF8A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEB0AA1CDDB1E800FCBF8A /* bg.png */; };
+		3EEEB0AD1CDDB56A00FCBF8A /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEB0AC1CDDB56A00FCBF8A /* Avatar.png */; };
+		3EEEB0AF1CDDBFD300FCBF8A /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEB0AE1CDDBFD300FCBF8A /* test.storyboard */; };
 		45E47FDD7ED79537D4E8D588 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5466874FF71D05F4696106 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +68,9 @@
 		3EC1A49A1CCF9FC7008143E0 /* BookReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITests.swift; sourceTree = "<group>"; };
 		3EC1A49C1CCF9FC7008143E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3EEEB0AA1CDDB1E800FCBF8A /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		3EEEB0AC1CDDB56A00FCBF8A /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
+		3EEEB0AE1CDDBFD300FCBF8A /* test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		8BA36B90BE4C815E52C2A0B1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,7 +137,6 @@
 		3E7B5E161CD4BE1800FFBF8A /* V */ = {
 			isa = PBXGroup;
 			children = (
-				3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 		3E7B5E2B1CD4BE2000FFBF8A /* V */ = {
 			isa = PBXGroup;
 			children = (
+				3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 		3EC1A4791CCF9FC7008143E0 /* BookReview */ = {
 			isa = PBXGroup;
 			children = (
+				3EEEB0A91CDDB1D800FCBF8A /* image */,
 				3E7B5E291CD4BE2000FFBF8A /* Me */,
 				3E7B5E221CD4BE2000FFBF8A /* Search */,
 				3E7B5E1C1CD4BE2000FFBF8A /* Message */,
@@ -278,6 +285,7 @@
 				3EC1A4861CCF9FC7008143E0 /* Info.plist */,
 				3E7B5E111CD4BC6B00FFBF8A /* BookReview-Bridging-Header.h */,
 				3E7B5E1A1CD4BE2000FFBF8A /* config.swift */,
+				3EEEB0AE1CDDBFD300FCBF8A /* test.storyboard */,
 			);
 			path = BookReview;
 			sourceTree = "<group>";
@@ -298,6 +306,15 @@
 				3EC1A49C1CCF9FC7008143E0 /* Info.plist */,
 			);
 			path = BookReviewUITests;
+			sourceTree = "<group>";
+		};
+		3EEEB0A91CDDB1D800FCBF8A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				3EEEB0AA1CDDB1E800FCBF8A /* bg.png */,
+				3EEEB0AC1CDDB56A00FCBF8A /* Avatar.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,8 +424,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EEEB0AD1CDDB56A00FCBF8A /* Avatar.png in Resources */,
 				3EC1A4851CCF9FC7008143E0 /* LaunchScreen.storyboard in Resources */,
 				3EC1A4821CCF9FC7008143E0 /* Assets.xcassets in Resources */,
+				3EEEB0AB1CDDB1E800FCBF8A /* bg.png in Resources */,
+				3EEEB0AF1CDDBFD300FCBF8A /* test.storyboard in Resources */,
 				3E0673231CD0731700B19278 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
