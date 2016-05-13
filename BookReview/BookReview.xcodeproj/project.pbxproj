@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E0673231CD0731700B19278 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3E0673221CD0731700B19278 /* Podfile */; };
+		3E12F2461CDF0A4C0066D988 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E12F2451CDF0A4C0066D988 /* CAPSPageMenu.swift */; };
 		3E7B5E191CD4BE2000FFBF8A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B5E181CD4BE2000FFBF8A /* HomeViewController.swift */; };
 		3E7B5E1B1CD4BE2000FFBF8A /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B5E1A1CD4BE2000FFBF8A /* config.swift */; };
 		3E7B5E211CD4BE2000FFBF8A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B5E201CD4BE2000FFBF8A /* MessageViewController.swift */; };
@@ -49,6 +50,7 @@
 		1E5466874FF71D05F4696106 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8CF3D23C5CC2AFA79439E1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3E0673221CD0731700B19278 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3E12F2451CDF0A4C0066D988 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		3E7B5E111CD4BC6B00FFBF8A /* BookReview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookReview-Bridging-Header.h"; sourceTree = "<group>"; };
 		3E7B5E181CD4BE2000FFBF8A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3E7B5E1A1CD4BE2000FFBF8A /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
@@ -117,6 +119,22 @@
 				3C8CF3D23C5CC2AFA79439E1 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3E12F2431CDF09B30066D988 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3E12F2441CDF0A3F0066D988 /* CAPSPageMenu */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		3E12F2441CDF0A3F0066D988 /* CAPSPageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3E12F2451CDF0A4C0066D988 /* CAPSPageMenu.swift */,
+			);
+			name = CAPSPageMenu;
 			sourceTree = "<group>";
 		};
 		3E7B5E141CD4BDF400FFBF8A /* Home */ = {
@@ -277,6 +295,7 @@
 		3EC1A4791CCF9FC7008143E0 /* BookReview */ = {
 			isa = PBXGroup;
 			children = (
+				3E12F2431CDF09B30066D988 /* Source */,
 				3EEEB0A91CDDB1D800FCBF8A /* image */,
 				3E7B5E291CD4BE2000FFBF8A /* Me */,
 				3E7B5E221CD4BE2000FFBF8A /* Search */,
@@ -511,6 +530,7 @@
 				3E7B5E1B1CD4BE2000FFBF8A /* config.swift in Sources */,
 				3EBACC9D1CD477CD00B8FA0B /* FocusViewController.swift in Sources */,
 				3EC1A47B1CCF9FC7008143E0 /* AppDelegate.swift in Sources */,
+				3E12F2461CDF0A4C0066D988 /* CAPSPageMenu.swift in Sources */,
 				3E7B5E211CD4BE2000FFBF8A /* MessageViewController.swift in Sources */,
 				3E7B5E191CD4BE2000FFBF8A /* HomeViewController.swift in Sources */,
 				3EEEB0B11CDDCC3600FCBF8A /* LineView.swift in Sources */,

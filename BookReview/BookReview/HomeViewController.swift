@@ -10,48 +10,60 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var navigationView:UIView!
+    var pageMenu:CAPSPageMenu?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.whiteColor()
         
-        self.setNavigationBar()
+        var controllerArray:[UIViewController] = []
+        
+        let FocusVC = FocusViewController()
+        FocusVC.title = "关注"
+        controllerArray.append(FocusVC)
+        let ChoiceVC = ChoiceViewController()
+        ChoiceVC.title = "精选"
+        controllerArray.append(ChoiceVC)
         
         
+        let parameters: [CAPSPageMenuOption] = [
+            .ScrollMenuBackgroundColor(UIColor.whiteColor()),
+            .ViewBackgroundColor(UIColor.whiteColor()),
+            .SelectionIndicatorColor(UIColor.orangeColor()),
+            .SelectedMenuItemLabelColor(UIColor.grayColor()),
+            .UnselectedMenuItemLabelColor(UIColor.grayColor()),
+            .BottomMenuHairlineColor(UIColor(red: 70.0/255.0, green: 70.0/255.0, blue: 80.0/255.0, alpha: 1.0)),
+            .UseMenuLikeSegmentedControl(true),
+            .MenuItemFont(UIFont.boldSystemFontOfSize(16)),
+            .MenuHeight(45.0),
+            .MenuItemWidth(SCREEN_WIDTH/2),
+            .CenterMenuItems(true)
+        ]
         
+        self.pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 20.0, self.view.frame.width, self.view.frame.height-20), pageMenuOptions: parameters)
+        //self.addChildViewController(self.pageMenu!)     //注释后使其不出现SrcollView
+        self.view.addSubview(self.pageMenu!.view)
+        
+        self.pageMenu?.didMoveToParentViewController(self)
     }
     
+    /**
+     隐藏导航栏
+     */
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    /**
-     设置导航栏
-     */
-    func setNavigationBar() {
-        navigationView = UIView(frame: CGRectMake(0,-20,SCREEN_WIDTH,65))
-        navigationView.backgroundColor = UIColor.whiteColor()
-        self.navigationController?.navigationBar.addSubview(navigationView)
-        
-        let focusBtn = UIButton(type: .System)
-        focusBtn.frame = CGRectMake(10, 20, SCREEN_WIDTH/2, 44)
-        focusBtn.setTitle("关注", forState: .Normal)
-        focusBtn.setTitleColor(UIColor.blackColor(), forState: .Normal)
-        focusBtn.addTarget(self, action: Selector("pushToFocus"), forControlEvents: .TouchUpInside)
-        
-        navigationView.addSubview(focusBtn)
-    }
-    
-    func pushToFocus() {
-        
-    }
-    
-    func pushToChoice() {
-        
-    }
     
 }

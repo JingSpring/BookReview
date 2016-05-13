@@ -36,7 +36,7 @@ class MeViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
      */
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
