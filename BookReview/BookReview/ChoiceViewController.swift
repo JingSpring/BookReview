@@ -8,12 +8,20 @@
 
 import UIKit
 
-class ChoiceViewController: UIViewController {
+class ChoiceViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    var tableView:UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.view.backgroundColor = UIColor.whiteColor()
+        
+        self.tableView = UITableView(frame: CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height), style: .Plain)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        self.tableView.registerNib(UINib(nibName: "ChoiceTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        self.view.addSubview(self.tableView)
         
     }
 
@@ -21,5 +29,24 @@ class ChoiceViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /**
+     *  UITableViewDelegate,UITableViewDataSource
+     */
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! ChoiceTableViewCell
+        
+        return cell
+    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 90
+    }
+
     
 }

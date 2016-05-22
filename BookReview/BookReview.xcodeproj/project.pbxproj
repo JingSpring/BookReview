@@ -21,6 +21,12 @@
 		3EC1A4851CCF9FC7008143E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EC1A4831CCF9FC7008143E0 /* LaunchScreen.storyboard */; };
 		3EC1A4901CCF9FC7008143E0 /* BookReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1A48F1CCF9FC7008143E0 /* BookReviewTests.swift */; };
 		3EC1A49B1CCF9FC7008143E0 /* BookReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC1A49A1CCF9FC7008143E0 /* BookReviewUITests.swift */; };
+		3ED043481CF16CD30057FAB8 /* FocusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED043461CF16CD30057FAB8 /* FocusTableViewCell.swift */; };
+		3ED043491CF16CD30057FAB8 /* FocusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED043471CF16CD30057FAB8 /* FocusTableViewCell.xib */; };
+		3ED0434C1CF16D120057FAB8 /* ChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED0434A1CF16D120057FAB8 /* ChoiceTableViewCell.swift */; };
+		3ED0434D1CF16D120057FAB8 /* ChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED0434B1CF16D120057FAB8 /* ChoiceTableViewCell.xib */; };
+		3ED043501CF170C10057FAB8 /* touxiang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED0434F1CF170C10057FAB8 /* touxiang.jpeg */; };
+		3ED043521CF1763C0057FAB8 /* FocusHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED043511CF1763C0057FAB8 /* FocusHeaderView.swift */; };
 		3EEEB0A81CDD9FFE00FCBF8A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */; };
 		3EEEB0AB1CDDB1E800FCBF8A /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEB0AA1CDDB1E800FCBF8A /* bg.png */; };
 		3EEEB0AD1CDDB56A00FCBF8A /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEB0AC1CDDB56A00FCBF8A /* Avatar.png */; };
@@ -70,6 +76,12 @@
 		3EC1A4961CCF9FC7008143E0 /* BookReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC1A49A1CCF9FC7008143E0 /* BookReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITests.swift; sourceTree = "<group>"; };
 		3EC1A49C1CCF9FC7008143E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED043461CF16CD30057FAB8 /* FocusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusTableViewCell.swift; sourceTree = "<group>"; };
+		3ED043471CF16CD30057FAB8 /* FocusTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FocusTableViewCell.xib; sourceTree = "<group>"; };
+		3ED0434A1CF16D120057FAB8 /* ChoiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		3ED0434B1CF16D120057FAB8 /* ChoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceTableViewCell.xib; sourceTree = "<group>"; };
+		3ED0434F1CF170C10057FAB8 /* touxiang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = touxiang.jpeg; sourceTree = "<group>"; };
+		3ED043511CF1763C0057FAB8 /* FocusHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusHeaderView.swift; sourceTree = "<group>"; };
 		3EEEB0A71CDD9FFD00FCBF8A /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3EEEB0AA1CDDB1E800FCBF8A /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		3EEEB0AC1CDDB56A00FCBF8A /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
@@ -157,6 +169,11 @@
 		3E7B5E161CD4BE1800FFBF8A /* V */ = {
 			isa = PBXGroup;
 			children = (
+				3ED043461CF16CD30057FAB8 /* FocusTableViewCell.swift */,
+				3ED043471CF16CD30057FAB8 /* FocusTableViewCell.xib */,
+				3ED0434A1CF16D120057FAB8 /* ChoiceTableViewCell.swift */,
+				3ED0434B1CF16D120057FAB8 /* ChoiceTableViewCell.xib */,
+				3ED043511CF1763C0057FAB8 /* FocusHeaderView.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -335,6 +352,7 @@
 			children = (
 				3EEEB0AA1CDDB1E800FCBF8A /* bg.png */,
 				3EEEB0AC1CDDB56A00FCBF8A /* Avatar.png */,
+				3ED0434F1CF170C10057FAB8 /* touxiang.jpeg */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -449,9 +467,12 @@
 				3EEEB0AD1CDDB56A00FCBF8A /* Avatar.png in Resources */,
 				3EC1A4851CCF9FC7008143E0 /* LaunchScreen.storyboard in Resources */,
 				3EC1A4821CCF9FC7008143E0 /* Assets.xcassets in Resources */,
+				3ED043501CF170C10057FAB8 /* touxiang.jpeg in Resources */,
 				3EEEB0AB1CDDB1E800FCBF8A /* bg.png in Resources */,
 				3EEEB0AF1CDDBFD300FCBF8A /* test.storyboard in Resources */,
 				3E0673231CD0731700B19278 /* Podfile in Resources */,
+				3ED0434D1CF16D120057FAB8 /* ChoiceTableViewCell.xib in Resources */,
+				3ED043491CF16CD30057FAB8 /* FocusTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +551,10 @@
 				3E7B5E1B1CD4BE2000FFBF8A /* config.swift in Sources */,
 				3EBACC9D1CD477CD00B8FA0B /* FocusViewController.swift in Sources */,
 				3EC1A47B1CCF9FC7008143E0 /* AppDelegate.swift in Sources */,
+				3ED043481CF16CD30057FAB8 /* FocusTableViewCell.swift in Sources */,
 				3E12F2461CDF0A4C0066D988 /* CAPSPageMenu.swift in Sources */,
+				3ED043521CF1763C0057FAB8 /* FocusHeaderView.swift in Sources */,
+				3ED0434C1CF16D120057FAB8 /* ChoiceTableViewCell.swift in Sources */,
 				3E7B5E211CD4BE2000FFBF8A /* MessageViewController.swift in Sources */,
 				3E7B5E191CD4BE2000FFBF8A /* HomeViewController.swift in Sources */,
 				3EEEB0B11CDDCC3600FCBF8A /* LineView.swift in Sources */,
