@@ -10,6 +10,7 @@ import UIKit
 
 class FocusTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var SendTime: UILabel!
     @IBOutlet weak var content: UILabel!
@@ -26,6 +27,8 @@ class FocusTableViewCell: UITableViewCell {
         
         self.userImage.layer.cornerRadius = self.userImage.layer.bounds.height/2
         self.userImage.layer.masksToBounds = true
+        
+        self.bottomView.layer.cornerRadius = 3
         
         
     }

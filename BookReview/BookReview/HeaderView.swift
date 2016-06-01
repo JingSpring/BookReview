@@ -24,7 +24,6 @@ class HeaderView: UIView {
     /**
      初始化view
      */
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -41,7 +40,7 @@ class HeaderView: UIView {
         self.userImageBtn = UIButton(frame: CGRectMake(View_Width/2-70/2,View_Height-150,75,75))
         self.userImageBtn?.layer.cornerRadius = 75/2
         self.userImageBtn?.layer.masksToBounds = true
-        self.userImageBtn?.backgroundColor = UIColor.greenColor()
+        //self.userImageBtn?.backgroundColor = UIColor.greenColor()
         self.userImageBtn?.setImage(UIImage(named: "Avatar"), forState: .Normal)
         self.imageBackground?.addSubview(self.userImageBtn!)
 

@@ -23,7 +23,10 @@ class FocusViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         self.tableView.dataSource = self
         self.tableView.tableHeaderView = UIView()
         
-        self.tableView.registerNib(UINib(nibName: "FocusTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        self.tableView.backgroundColor = UIColor(red: 0xf0/255, green: 0xf0/255, blue: 0xf0/255, alpha: 1)
+        self.tableView.separatorStyle = .None     //去除单元格分隔线
+        
+        self.tableView.registerNib(UINib(nibName: "FocusTableViewCell", bundle: nil), forCellReuseIdentifier: "fCell")
         self.view.addSubview(self.tableView)
         
         self.headerView = FocusHeaderView(frame: CGRectMake(0,0,SCREEN_WIDTH,200))
@@ -46,7 +49,7 @@ class FocusViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         return 10
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! FocusTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("fCell") as! FocusTableViewCell
         
         return cell
     }

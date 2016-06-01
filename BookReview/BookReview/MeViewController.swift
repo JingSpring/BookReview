@@ -17,6 +17,7 @@ class MeViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
+        self.navigationController?.navigationBarHidden = true
         
         self.tableView = UITableView(frame: self.view.frame)
         self.view.addSubview(self.tableView)
@@ -29,18 +30,6 @@ class MeViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
         
         tableView.tableHeaderView = headerView
         
-    }
-    
-    /**
-     隐藏导航栏
-     */
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-    override func viewDidDisappear(animated: Bool) {
-        super.viewDidDisappear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     /**
@@ -63,7 +52,6 @@ class MeViewController: UIViewController,UITableViewDelegate,UITableViewDataSour
         for view in cell.contentView.subviews {
             view.removeFromSuperview()
         }
-        
         
         
         return cell

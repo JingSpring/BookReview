@@ -20,7 +20,10 @@ class ChoiceViewController: UIViewController,UITableViewDelegate,UITableViewData
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        self.tableView.registerNib(UINib(nibName: "ChoiceTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        self.tableView.backgroundColor = UIColor(red: 0xf0/255, green: 0xf0/255, blue: 0xf0/255, alpha: 1)
+        self.tableView.separatorStyle = .None     //去除单元格分隔线
+        
+        self.tableView.registerNib(UINib(nibName: "ChoiceTableViewCell", bundle: nil), forCellReuseIdentifier: "cCell")
         self.view.addSubview(self.tableView)
         
     }
@@ -40,12 +43,12 @@ class ChoiceViewController: UIViewController,UITableViewDelegate,UITableViewData
         return 20
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! ChoiceTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cCell") as! ChoiceTableViewCell
         
         return cell
     }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 90
+        return 110
     }
 
     
