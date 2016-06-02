@@ -48,18 +48,6 @@ class HomeViewController: UIViewController {
         
         self.pageMenu?.didMoveToParentViewController(self)
     }
-    
-//    /**
-//     隐藏导航栏
-//     */
-//    override func viewDidAppear(animated: Bool) {
-//        super.viewDidAppear(animated)
-//        self.navigationController?.setNavigationBarHidden(true, animated: false)
-//    }
-//    override func viewDidDisappear(animated: Bool) {
-//        super.viewDidDisappear(animated)
-//        self.navigationController?.setNavigationBarHidden(false, animated: true)
-//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

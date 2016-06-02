@@ -10,7 +10,7 @@ import UIKit
 
 class HeaderView: UIView {
     
-    var lineView:LineView!
+    //var lineView:LineView!
 
     var View_Width:CGFloat!
     var View_Height:CGFloat!
@@ -59,8 +59,8 @@ class HeaderView: UIView {
         self.imageBackground?.addSubview(self.settingButton!)
         
         
-        self.lineView = LineView(frame: CGRectMake(0,View_Height-38,View_Width,38))
-        self.imageBackground?.addSubview(self.lineView!)
+        //self.lineView = LineView(frame: CGRectMake(0,View_Height-38,View_Width,38))
+        //self.imageBackground?.addSubview(self.lineView!)
         
         
     }

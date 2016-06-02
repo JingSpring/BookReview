@@ -30,7 +30,6 @@ class FocusTableViewCell: UITableViewCell {
         
         self.bottomView.layer.cornerRadius = 3
         
-        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

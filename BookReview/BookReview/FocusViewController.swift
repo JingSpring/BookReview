@@ -22,6 +22,7 @@ class FocusViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.tableHeaderView = UIView()
+        self.tableView.userInteractionEnabled = true //使之可交互
         
         self.tableView.backgroundColor = UIColor(red: 0xf0/255, green: 0xf0/255, blue: 0xf0/255, alpha: 1)
         self.tableView.separatorStyle = .None     //去除单元格分隔线
